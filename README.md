@@ -14,4 +14,7 @@ Make sure to handle file type validation and size limits when uploading music fi
 Implement proper error handling and validation for user input.
 Consider adding features like searching, sorting, and filtering for uploaded music tracks.
 You can deploy the application to a hosting service like Heroku for public access.
-This project provides a solid foundation for building a simple music upload webpage. Feel free to expand upon it by adding more features and enhancements according to your requirements.
+This project provides a solid foundation for building a simple music upload webpage. Feel free to expand upon it by adding more features and enhancements according to your requirements....
+
+Make sure to install the required npm packages:
+npm install express mongoose body-parser express-session passport passport-local
