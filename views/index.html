@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicUpload</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to MusicUpload</h1>
+        <nav>
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Latest Uploads</h2>
+        <div id="music-list">
+            {{#each music}}
+            <div class="music-item">
+                <h3>{{this.title}}</h3>
+                <p>Artist: {{this.artist}}</p>
+                <p>Duration: {{this.duration}} seconds</p>
+                <audio controls>
+                    <source src="/uploads/{{this.file.filename}}" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <form action="/music/delete/{{this._id}}" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+            {{/each}}
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MusicUpload. All rights reserved.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
