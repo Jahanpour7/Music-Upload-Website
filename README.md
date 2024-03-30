@@ -1,7 +1,7 @@
 # Music-Upload-Website
 MusicUpload is a web application that allows users to upload and share their favorite music tracks easily. Users can upload their music files, view a list of uploaded tracks, play them directly on the webpage, and manage their uploads.
 
-Setup Guide
+Setup Guide:
 Clone the repository from GitHub.
 Install Node.js and MongoDB if not already installed.
 Navigate to the project directory in your terminal.
